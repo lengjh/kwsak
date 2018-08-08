@@ -1,0 +1,32 @@
+{
+  "name": "kwsak",
+  "version": "1.0.1",
+  "description": "kwask utils",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lengjh/kwsak.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lodash",
+    "utils",
+    "jquery",
+    "log",
+    "console",
+    "date",
+    "time",
+    "event",
+    "nodejs",
+    "express",
+    "koa"
+  ],
+  "bugs": {
+    "url": "https://github.com/lengjh/kwsak/issues"
+  },
+  "homepage": "https://github.com/lengjh/kwsak#readme",
+  "author": "kingwell",
+  "license": "ISC"
+}
