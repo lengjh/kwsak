@@ -1,6 +1,6 @@
 {
   "name": "kwsak",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "kwask utils",
   "main": "index.js",
   "repository": {
@@ -26,6 +26,7 @@
   "bugs": {
     "url": "https://github.com/lengjh/kwsak/issues"
   },
+  "readme": "https://github.com/lengjh/kwsak#readme",
   "homepage": "https://github.com/lengjh/kwsak#readme",
   "author": "kingwell",
   "license": "ISC"
