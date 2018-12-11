@@ -314,6 +314,7 @@
 
 	Utils
 		.add('constructor', Utils)
+		.add('strimHtml', __strimHtml)
 		.add('fixNumber', __fixNumber)
 		.add('getTimesTamp', __getTimesTamp)
 		.add('copy', __copy, '深度复制')
@@ -594,6 +595,26 @@
 		.add('warn', function (msg, ops) {
 			this.__pub(ops, msg, 'yellow');
 		})
+		.add('color', function (list, ops) {
+			options = __assign({
+				clear: false,
+				showTime: true,
+				beforeContent: ''
+			}, ops);
+			var date = new MyDate();
+			list = typeof list === 'string' ? [list] : list;
+			if (options.clear) {
+				this.clear();
+			}
+			console.log(
+				this.getColor('lightCyan')(options.beforeContent + ' ') +
+				(options.showTime ? (this.getColor('green')('[' + date.toDateTimeString() + ']') + ' ') : '') +
+				this.getColor('magenta')(list[0] || '') + ' ' +
+				this.getColor('yellow')(list[1] || '') + ' ' +
+				this.getColor('lightRed')(list[2] || '') + ' ' +
+				this.getColor('cyan')(list[3] || '')
+			);
+		})
 		.add('config', function (options) {
 			options = __assign(options);
 			this.dev = options.dev;
@@ -676,6 +697,5 @@
 			window.__ = window.kw = kw;
 		}
 	}
-
 
 })();
