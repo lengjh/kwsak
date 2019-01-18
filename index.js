@@ -122,10 +122,10 @@
 	 */
 	var __getRange = function (start, end) {
 		var temp;
-		if (!(start || end)) {
+		if (!(undefined !== start || undefined !== end)) {
 			start = 0;
 			end = 10000;
-		} else if (!end) {
+		} else if (undefined === end) {
 			end = start;
 			start = 0;
 		} else if (start > end) {
